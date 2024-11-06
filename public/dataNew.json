@@ -1,0 +1,62 @@
+[
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_111554.mp4",
+        "timestamp": "11:16:26.384025",
+        "error": "not open door for customer",
+        "identity": "Hoang"
+    },
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_111837.mp4",
+        "timestamp": "11:19:19.258359",
+        "error": "not open door for customer",
+        "identity": "Hoang"
+    },
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_112220.mp4",
+        "timestamp": "11:22:52.959836",
+        "identity": "null",
+        "error": "null"
+    },
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_112340.mp4",
+        "timestamp": "11:24:12.478434",
+        "identity": "Hoang",
+        "error": "not open door for customer"
+    },
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_112426.mp4",
+        "timestamp": "11:24:39.016265",
+        "identity": "null",
+        "error": "null"
+    },
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_112913.mp4",
+        "timestamp": "11:31:08.158270",
+        "error": "not wearing uniform",
+        "identity": "Hoang"
+    },
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_112913.mp4",
+        "timestamp": "11:31:21.748499",
+        "identity": "null",
+        "error": "null"
+    },
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_114031.mp4",
+        "timestamp": "11:42:14.069233",
+        "identity": "null",
+        "error": "null"
+    },
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_114217.mp4",
+        "timestamp": "11:44:56.252537",
+        "identity": "null",
+        "error": "null"
+    },
+    {
+        "video": "/home/endtheme/git/mmaction2/comb/YOLOv10_DeepSORT/output/video_chunk_20241106_114702.mp4",
+        "timestamp": "11:48:11.472912",
+        "identity": "Hoang",
+        "error": "not open door for customer"
+    }
+]

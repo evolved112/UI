@@ -25,7 +25,7 @@
 
     <div class="col-md-6 col-12">
       <chart-card
-        title="Today's error"
+        title="Today's Errors"
         :subTitle ="usersChart.today"
         :chart-data="usersChart.data"
         :chart-options="usersChart.options"
@@ -108,7 +108,7 @@ export default {
     };
   },
   mounted() {
-    this.loadData();
+    // this.loadData();
   },
   methods: {
     async loadData() {

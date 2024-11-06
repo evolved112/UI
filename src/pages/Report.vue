@@ -10,67 +10,10 @@
     </div>
   </div>
 </template>
+
 <script>
 import { PaperTable } from "@/components";
-const tableColumns = ["Id", "Name", "Salary", "Country", "City"];
-const tableData = [
-  {
-    id: 1,
-    name: "Dakota Rice",
-    salary: "$36.738",
-    country: "Niger",
-    city: "Oud-Turnhout",
-  },
-  {
-    id: 2,
-    name: "Minerva Hooper",
-    salary: "$23,789",
-    country: "Curaçao",
-    city: "Sinaai-Waas",
-  },
-  {
-    id: 3,
-    name: "Sage Rodriguez",
-    salary: "$56,142",
-    country: "Netherlands",
-    city: "Baileux",
-  },
-  {
-    id: 4,
-    name: "Philip Chaney",
-    salary: "$38,735",
-    country: "Korea, South",
-    city: "Overland Park",
-  },
-  {
-    id: 5,
-    name: "Doris Greene",
-    salary: "$63,542",
-    country: "Malawi",
-    city: "Feldkirchen in Kärnten",
-  },
-  {
-    id: 6,
-    name: "Doris Greene",
-    salary: "$63,542",
-    country: "Malawi",
-    city: "Feldkirchen in Kärnten",
-  },
-  {
-    id: 7,
-    name: "Doris Greene",
-    salary: "$63,542",
-    country: "Malawi",
-    city: "Feldkirchen in Kärnten",
-  },
-  {
-    id: 8,
-    name: "Doris Greene",
-    salary: "$63,542",
-    country: "Malawi",
-    city: "Feldkirchen in Kärnten",
-  },
-];
+const tableColumns = [ "Timestamp", "Identity", "Error"];
 
 export default {
   components: {
@@ -79,13 +22,36 @@ export default {
   data() {
     return {
       table1: {
-        title: "Stripped Table",
-        subTitle: "Here is a subtitle for this table",
+        title: "Errors Report",
         columns: [...tableColumns],
-        data: [...tableData],
+        data: [], // initialize as empty
       },
     };
   },
+  mounted() {
+    this.loadData();
+  },
+  methods: {
+    async loadData() {
+      try {
+        const response = await fetch('/dataNew.json');
+        const data = await response.json();
+        // Filter out entries with a null error and map them to the table data format
+        this.table1.data = data
+          .filter(item => item.error !== "null")
+          .map(item => ({
+            video: item.video,
+            timestamp: item.timestamp,
+            identity: item.identity,
+            error: item.error,
+          }));
+        console.log(this.table1.data);
+      } catch (error) {
+        console.error("Error loading data:", error);
+      }
+    }
+  }
 };
 </script>
+
 <style></style>
